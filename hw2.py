@@ -7,7 +7,7 @@ users = []
 workouts = []
 meals = []
 
-# ---------- USERS ----------
+# USERS 
 @app.get("/users")
 async def get_users():
     return {"users": users}
@@ -23,7 +23,7 @@ async def delete_user(index: int = 0):
     return {"users": users}
 
 
-# ---------- WORKOUTS ----------
+# WORKOUTS 
 @app.get("/workouts")
 async def get_workouts():
     return {"workouts": workouts}
@@ -39,7 +39,7 @@ async def delete_workout(index: int = 0):
     return {"workouts": workouts}
 
 
-# ---------- MEALS ----------
+# MEALS 
 @app.get("/meals")
 async def get_meals():
     return {"meals": meals}
